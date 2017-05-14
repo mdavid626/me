@@ -1,34 +1,42 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Dávid Molnár</title>
-    <meta name="description" content="David is a skilled Fullstack Developer focused on Microsoft technologies.">
-    <meta name="author" content="Dávid Molnár">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/bundle.css">
+    <link rel="canonical" href="https://mdavid626.com">
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Dávid Molnár">
-    <meta name="twitter:description" content="David is a skilled Fullstack Developer focused on Microsoft technologies.">
-    <meta name="twitter:image" content="https://mdavid626.com/images/profile.jpg"/>
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Dávid Molnár">
-    <meta property="og:description" content="David is a skilled Fullstack Developer focused on Microsoft technologies.">
-    <meta property="og:image" content="https://mdavid626.com/images/profile.jpg">
-
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="msapplication-TileImage" content="images/favicons/favicon-144.png">
     <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="application-name" content="Dávid Molnár"/>
+    <meta name="author" content="Dávid Molnár"/>
+    <meta name="description" content="Dávid is a skilled Fullstack Developer focused on Microsoft technologies."/>
+    <meta name="generator" content="Jekyll"/>
+    <meta name="keywords" content="Computer, .NET, C#, Microsoft, Weblog, Germany, Munich, ASP.NET, Azure, Cloud, Productivity, UX, User Experience, Design, ASP.NET, Programming, Javascript"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Dávid Molnár">
+    <meta name="twitter:title" content="Dávid Molnár">
+    <meta name="twitter:description" content="David is a skilled Fullstack Developer focused on Microsoft technologies.">
+    <meta name="twitter:creator" content="Dávid Molnár">
+    <meta name="twitter:image" content="https://mdavid626.com/images/profile.jpg"/>
+    
+    <meta property="og:title" content="Dávid Molnár">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mdavid626.com/" />
+    <meta property="og:image" content="https://mdavid626.com/images/profile.jpg">
+    <meta property="og:description" content="Dávid is a skilled Fullstack Developer focused on Microsoft technologies.">
+    <meta property="og:site_name" content="Dávid Molnár" />
+
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="196x196" href="images/favicons/favicon-192.png">
     <link rel="icon" type="image/png" sizes="160x160" href="images/favicons/favicon-160.png">
@@ -36,6 +44,7 @@
     <link rel="icon" type="image/png" sizes="64x64" href="images/favicons/favicon-64.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16.png">
+
     <link rel="apple-touch-icon" href="images/favicons/favicon-57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/favicon-114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/favicon-72.png">
@@ -46,15 +55,18 @@
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png">
 
-    <link rel="stylesheet" href="/css/bundle.css">
-    <link rel="canonical" href="https://mdavid626.com">
-
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] ||
+                function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-8597589-23', 'auto');
@@ -67,61 +79,58 @@
         <i class="icon icon-list btn-mobile-menu__icon"></i>
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
-
     <header class="panel-cover" style="background-image: url(/images/cover.jpg)">
         <div class="panel-main">
-
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content">
                     <a href="/" title="Link to home of Dávid Molnár">
-                        <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+                        <img src="/images/profile.jpg" class="user-image" alt="Dávid Molnár Profile Photo" title="Dávid Molnár Profile Photo">
                         <h1 class="panel-title">Dávid Molnár</h1>
                     </a>
                     <hr class="panel-cover__divider">
                     <p class="panel-cover__description">Skilled Fullstack Developer focused on Microsoft technologies</p>
                     <hr class="panel-cover__divider panel-cover__divider--secondary">
-
                     <div class="navigation-wrapper">
-
                         <nav class="cover-navigation">
                             <ul class="navigation">
-                                <li class="navigation__item"><a href="https://blog.mdavid626.com" title="Dávid Molnár Blog" target="_blank">Blog</a></li>
+                                <li class="navigation__item">
+                                    <a href="https://blog.mdavid626.com" title="Dávid Molnár Blog">Blog</a>
+                                </li>
                             </ul>
                         </nav>
-
                         <nav class="cover-navigation navigation--social">
                             <ul class="navigation">
                                 <!-- LinkedIn -->
                                 <li class="navigation__item">
-                                    <a href="https://www.linkedin.com/in/mdavid626" title="mdavid626 on LinkedIn" target="_blank">
+                                    <a href="https://www.linkedin.com/in/mdavid626" title="Dávid Molnár on LinkedIn">
                                         <i class="icon icon-social-linkedin"></i>
                                         <span class="label">LinkedIn</span>
                                     </a>
                                 </li>
                                 <!-- Stack Overflow -->
                                 <li class="navigation__item">
-                                    <a href="http://stackoverflow.com/users/1093508/d%C3%A1vid-moln%C3%A1r?tab=profile" title="mdavid626 on Stack Overflow" target="_blank">
+                                    <a href="http://stackoverflow.com/users/1093508/d%C3%A1vid-moln%C3%A1r?tab=profile" title="Dávid Molnár on Stack Overflow">
                                         <i class="icon icon-social-stack-overflow"></i>
                                         <span class="label">Stack Overflow</span>
                                     </a>
                                 </li>
                                 <!-- GitHub -->
                                 <li class="navigation__item">
-                                    <a href="https://www.github.com/mdavid626" title="mdavid626 on GitHub" target="_blank">
+                                    <a href="https://www.github.com/mdavid626" title="Dávid Molnár on GitHub">
                                         <i class="icon icon-social-github"></i>
                                         <span class="label">GitHub</span>
                                     </a>
                                 </li>
                                 <!-- HackerRank -->
                                 <li class="navigation__item">
-                                    <a href="https://www.hackerrank.com/mdavid626?hr_r=1" title="mdavid626 on HackerRank" target="_blank">
+                                    <a href="https://www.hackerrank.com/mdavid626?hr_r=1" title="Dávid Molnár on HackerRank">
                                         <i class="icon icon-torso"></i>
                                         <span class="label">HackerRank</span>
                                     </a>
                                 </li>
                                 <!-- Twitter -->
                                 <li class="navigation__item">
-                                    <a href="https://twitter.com/mdavid626" title="@mdavid626 on Twitter" target="_blank">
+                                    <a href="https://twitter.com/mdavid626" title="Dávid Molnár on Twitter">
                                         <i class="icon icon-social-twitter"></i>
                                         <span class="label">Twitter</span>
                                     </a>
@@ -159,7 +168,7 @@
                 }
             }
 
-            window.onload = function() {
+            window.onload = function () {
                 var btns = document.querySelectorAll(".btn-mobile-menu");
                 for (var i = 0; i < btns.length; i++) {
                     btns[i].addEventListener('click', toggle);
