@@ -133,20 +133,42 @@
             <div class="panel-cover--overlay"></div>
         </div>
     </header>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function () {
+        (function () {
+            function toggleClass(element, classNameToToggle) {
+                var currentClass = element.className;
+                var newClass;
+                if (currentClass.split(" ").indexOf(classNameToToggle) > -1) { //has class
+                    newClass = currentClass.replace(new RegExp('\\b' + classNameToToggle + '\\b', 'g'), "");
+                } else {
+                    newClass = currentClass + " " + classNameToToggle;
+                }
+                element.className = newClass.trim();
+            }
 
-            $('.btn-mobile-menu').click(function() {
-                $('.navigation-wrapper').toggleClass('visible animated bounceInDown');
-                $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
-            });
+            function toggle() {
+                var navs = document.querySelectorAll(".navigation-wrapper");
+                for (var i = 0; i < navs.length; i++) {
+                    toggleClass(navs[i], "visible");
+                    toggleClass(navs[i], "animated");
+                    toggleClass(navs[i], "bounceInDown");
+                }
+                var icons = document.querySelectorAll(".btn-mobile-menu__icon");
+                for (var j = 0; j < icons.length; j++) {
+                    toggleClass(icons[j], "icon-list");
+                    toggleClass(icons[j], "icon-x-circle");
+                    toggleClass(icons[j], "animated");
+                    toggleClass(icons[j], "fadeIn");
+                }
+            }
 
-
-        })
-
+            window.onload = function() {
+                var btns = document.querySelectorAll(".btn-mobile-menu");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener('click', toggle);
+                }
+            }
+        })();
     </script>
 </body>
 </html>
