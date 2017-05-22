@@ -69,7 +69,7 @@ pre.highlight code,
 }
 
 .panel-cover {
-    background-image: url(/images/cover.jpg);
+    background-image: url(/images/cover.jpg?v=2);
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
