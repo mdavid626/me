@@ -58,7 +58,7 @@ pre.highlight code,
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: -100;
+    z-index: 1;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -66,4 +66,12 @@ pre.highlight code,
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.panel-cover {
+    background-image: url(/images/cover.jpg?v=2);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
