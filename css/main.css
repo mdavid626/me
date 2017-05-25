@@ -74,4 +74,8 @@ pre.highlight code,
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
