@@ -84,7 +84,7 @@
         <i class="icon icon-list btn-mobile-menu__icon"></i>
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
-    <div id="my-cover" class="video-cover"></div>
+    <div class="video-cover"></div>
     <main class="panel-cover" style="background: none;">
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
@@ -176,7 +176,7 @@
 
             function playVideo(video) {
                 video.play();
-                document.querySelector("#my-cover").style.opacity = 0;
+                document.querySelector(".video-cover").style.opacity = 0;
             }
 
             window.onload = function () {
