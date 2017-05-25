@@ -71,6 +71,8 @@ pre.highlight,
     z-index: -200;
     min-width: 100%;
     min-height: 100%;
+    width: 100%;
+    height: 100%;
     background-image: url(/images/cover.jpg?v=2);
     background-position: center;
     background-repeat: no-repeat;
@@ -78,14 +80,14 @@ pre.highlight,
 }
 
 @media (min-aspect-ratio: 16/9) {
-    .video, .video-cover {
+    .video {
         width: 100%;
         height: auto;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .video, .video-cover {
+    .video {
         width: auto;
         height: 100%;
     }
