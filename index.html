@@ -4,7 +4,7 @@
     <title>Dávid Molnár</title>
 
     <link rel="shortcut icon" href="/favicon.ico?v=2" />
-    <link rel="stylesheet" href="/css/bundle.css?v=6" />
+    <link rel="stylesheet" href="/css/bundle.css?v=7" />
     <link rel="canonical" href="https://mdavid626.com" />
 
     <meta charset="utf-8" />
@@ -75,16 +75,17 @@
 </head>
 
 <body>
-    <video id="background-video" class="video" muted loop preload="auto">
-        <source src="/media/Palm_Trees.mp4" type="video/mp4">
-        <source src="/media/Palm_Trees.ogv" type="video/ogg">
-        <source src="/media/Palm_Trees.webm" type="video/webm">
-    </video>
+    <div class="video-cover">
+        <video class="video" muted loop autoplay preload="auto">
+            <source src="/media/Palm_Trees.mp4" type="video/mp4">
+            <source src="/media/Palm_Trees.ogv" type="video/ogg">
+            <source src="/media/Palm_Trees.webm" type="video/webm">
+        </video>
+    </div>
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
-    <div class="video-cover"></div>
     <main class="panel-cover" style="background: none;">
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
@@ -174,24 +175,10 @@
                 }
             }
 
-            function playVideo(video) {
-                video.play();
-                document.querySelector(".video-cover").style.opacity = 0;
-            }
-
             window.onload = function () {
                 var btns = document.querySelectorAll(".btn-mobile-menu");
                 for (var i = 0; i < btns.length; i++) {
                     btns[i].addEventListener('click', toggle);
-                }
-
-                var video = document.querySelector("#background-video");
-                video.addEventListener("canplay", function () {
-                    playVideo(video);
-                });
-
-                if (video.readyState > 3) {
-                    playVideo(video);
                 }
             }
         })();
